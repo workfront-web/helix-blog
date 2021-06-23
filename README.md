@@ -1,10 +1,11 @@
 # Adobe Experience Cloud Website
 
 Inner CDN:
-- https://main--business-website--adobe.hlx.page/
+- https://main--helix-blog--workfront-web.hlx.page/
 
-Outer CDN:
-- https://business-website--adobe.hlx.live/
+Cookbook for first time of helix
+- https://main--helix-blog--workfront-web.hlx.page/cookbook
+
 
 ## Installation
 
