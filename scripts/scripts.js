@@ -372,30 +372,3 @@ async function decoratePage(win = window) {
 }
 
 decoratePage(window);
-
-// Adobe config
-window.fedsMapping = {
-  ko: 'kr'
-};
-
-window.fedsConfig = {
-  locale: window.fedsMapping[window.blog.language] || window.blog.language,
-  content: {
-    experience: 'blogs/blog-gnav',
-  },
-  search: {
-    context: 'blogs',
-    passExperienceName: true,
-  },
-  disableSticky: false,
-  privacy: {
-    otDomainId: getOtDomainId(),
-    footerLinkSelector: '[data-feds-action="open-adchoices-modal"]',
-  },
-};
-
-window.adobeid = {
-  client_id: 'theblog-helix',
-  scope: 'AdobeID,openid',
-  locale: window.blog.language,
-};
