@@ -17,36 +17,6 @@
  * @param {object} attrs An object containing the attributes
  * @returns {Element} The new tag
  */
-
-// Adobe config
- window.fedsMapping = {
-  ko: 'kr'
-};
-
-window.fedsConfig = {
-  locale: window.fedsMapping[window.blog.language] || window.blog.language,
-  content: {
-    experience: 'blogs/blog-gnav',
-  },
-  search: {
-    context: 'blogs',
-    passExperienceName: true,
-  },
-  disableSticky: false,
-  privacy: {
-    otDomainId: getOtDomainId(),
-    footerLinkSelector: '[data-feds-action="open-adchoices-modal"]',
-  },
-};
-
-window.adobeid = {
-  client_id: 'theblog-helix',
-  scope: 'AdobeID,openid',
-  locale: window.blog.language,
-};
-
-
-
 export function createTag(name, attrs) {
   const el = document.createElement(name);
   if (typeof attrs === 'object') {
@@ -402,3 +372,30 @@ async function decoratePage(win = window) {
 }
 
 decoratePage(window);
+
+// Adobe config
+window.fedsMapping = {
+  ko: 'kr'
+};
+
+window.fedsConfig = {
+  locale: window.fedsMapping[window.blog.language] || window.blog.language,
+  content: {
+    experience: 'blogs/blog-gnav',
+  },
+  search: {
+    context: 'blogs',
+    passExperienceName: true,
+  },
+  disableSticky: false,
+  privacy: {
+    otDomainId: getOtDomainId(),
+    footerLinkSelector: '[data-feds-action="open-adchoices-modal"]',
+  },
+};
+
+window.adobeid = {
+  client_id: 'theblog-helix',
+  scope: 'AdobeID,openid',
+  locale: window.blog.language,
+};
